@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         imageView.rounded()
+        self.view.backgroundColor = UIColor.emeraldGreen()
     }
 
     override func didReceiveMemoryWarning() {
