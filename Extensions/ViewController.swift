@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var boneButton: UIButton!
+    @IBOutlet weak var ballButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        imageView.rounded()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func didTapBoneButton(_ sender: Any) {
+        boneButton.wobble()
+    }
+    
+    @IBAction func didTapBallButton(_ sender: Any) {
+        ballButton.shake()
+    }
+    
 }
 
